@@ -20,6 +20,9 @@
     --stone-bg:#DDD8CC;
     --line:#C9C8C0;
     --text:#22302F;
+    --verde-agua:#A9C9BE;
+    --verde-agua-bg:rgba(169,201,190,.28);
+    --verde-agua-tint:#E7F0EC;
 
     --font-serif:'Cormorant Garamond', Georgia, serif;
     --font-sans:'Manrope', -apple-system, sans-serif;
@@ -188,7 +191,7 @@
     white-space:nowrap;
   }
   header.on-hero .main-nav a{ color:var(--white-broken); }
-  .main-nav a[aria-current="page"], .main-nav a:hover{ border-bottom-color:currentColor; }
+  .main-nav a[aria-current="page"], .main-nav a:hover{ border-bottom-color:var(--verde-agua); }
 
   .header-actions{ display:flex; align-items:center; gap:var(--sp-3); }
   .header-actions .btn-primary{ display:none; }
@@ -315,7 +318,7 @@
 
   /* ---------- BARRA INFO ---------- */
   .info-bar{
-    background:var(--stone-bg);
+    background:var(--verde-agua-tint);
     border-bottom:1px solid var(--line);
   }
   .info-bar .container{
@@ -376,10 +379,19 @@
     flex-direction:column;
     gap:var(--sp-2);
   }
-  .esp-card .icon{ width:26px; height:26px; color:var(--petrol); margin-bottom:var(--sp-1); }
+  .icon-circle{
+    width:48px; height:48px;
+    border-radius:50%;
+    background:var(--verde-agua-bg);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:var(--sp-2);
+  }
+  .esp-card .icon{ width:22px; height:22px; color:var(--petrol); }
   .esp-card h3{ font-size:1.05rem; line-height:1.25; }
   .esp-card p{ font-size:.82rem; color:var(--green-gray); }
-  .esp-dash{ width:20px; height:1px; background:var(--stone); margin-top:var(--sp-2); }
+  .esp-dash{ width:20px; height:1px; background:var(--verde-agua); margin-top:var(--sp-2); }
 
   /* ---------- SOBRE MI ---------- */
   .about{
@@ -420,7 +432,7 @@
     content:"";
     position:absolute;
     inset:14px;
-    border:1px solid var(--petrol);
+    border:1px solid var(--verde-agua);
     pointer-events:none;
   }
   .about-content .brand-sub{ display:block; margin-bottom:var(--sp-2); color:var(--green-gray); font-size:.75rem; }
@@ -442,7 +454,8 @@
     padding-top:var(--sp-4);
   }
   .pillar{ display:flex; align-items:center; gap:var(--sp-3); font-size:.92rem; font-weight:600; color:var(--petrol); }
-  .pillar svg{ width:22px; height:22px; color:var(--green-gray); flex-shrink:0; }
+  .pillar .icon-circle{ width:38px; height:38px; margin-bottom:0; flex-shrink:0; }
+  .pillar svg{ width:18px; height:18px; color:var(--petrol); flex-shrink:0; }
 
   /* ---------- PROBLEMAS ---------- */
   .problems{ background:var(--white-broken); }
@@ -452,7 +465,7 @@
     gap:var(--sp-4);
   }
   .problem-card{
-    background:var(--ivory);
+    background:var(--verde-agua-tint);
     border:1px solid var(--line);
     border-radius:4px;
     padding:var(--sp-5);
@@ -519,8 +532,8 @@
   .process-num{
     font-family:var(--font-serif);
     font-size:2.4rem;
-    color:var(--green-gray);
-    opacity:.55;
+    color:var(--verde-agua);
+    opacity:.9;
   }
   .process-step h3{ font-size:1.15rem; }
   .process-step p{ font-size:.88rem; color:var(--green-gray); }
@@ -760,37 +773,37 @@
 
       <div class="esp-grid">
         <div class="esp-card">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h7M9 16h7"/></svg>
+          <span class="icon-circle"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h7M9 16h7"/></svg></span>
           <h3>Derecho Civil</h3>
           <p>Contratos, daños, obligaciones.</p>
           <div class="esp-dash" aria-hidden="true"></div>
         </div>
         <div class="esp-card">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="7" r="2.6"/><circle cx="5" cy="9" r="2"/><circle cx="19" cy="9" r="2"/><path d="M4 20c0-3 2.5-5 5-5M20 20c0-3-2.5-5-5-5"/><path d="M7 20c0-3.5 2.2-6 5-6s5 2.5 5 6"/></svg>
+          <span class="icon-circle"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="7" r="2.6"/><circle cx="5" cy="9" r="2"/><circle cx="19" cy="9" r="2"/><path d="M4 20c0-3 2.5-5 5-5M20 20c0-3-2.5-5-5-5"/><path d="M7 20c0-3.5 2.2-6 5-6s5 2.5 5 6"/></svg></span>
           <h3>Derecho de Familia</h3>
           <p>Divorcios, alimentos, cuidados, régimen comunicacional.</p>
           <div class="esp-dash" aria-hidden="true"></div>
         </div>
         <div class="esp-card">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <span class="icon-circle"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12l2 2 4-4"/></svg></span>
           <h3>Sucesiones</h3>
           <p>Planificación y tramitación sucesoria.</p>
           <div class="esp-dash" aria-hidden="true"></div>
         </div>
         <div class="esp-card">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l8 4v2H4V7z"/><path d="M6 9v8M12 9v8M18 9v8M4 20h16"/></svg>
+          <span class="icon-circle"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l8 4v2H4V7z"/><path d="M6 9v8M12 9v8M18 9v8M4 20h16"/></svg></span>
           <h3>Derecho Laboral</h3>
           <p>Despidos, accidentes de trabajo (ART), derechos laborales.</p>
           <div class="esp-dash" aria-hidden="true"></div>
         </div>
         <div class="esp-card">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 16l2-6a2 2 0 0 1 2-1.4h8a2 2 0 0 1 2 1.4l2 6"/><rect x="3" y="16" width="18" height="4" rx="1"/><circle cx="7.5" cy="20" r="1.2"/><circle cx="16.5" cy="20" r="1.2"/></svg>
+          <span class="icon-circle"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 16l2-6a2 2 0 0 1 2-1.4h8a2 2 0 0 1 2 1.4l2 6"/><rect x="3" y="16" width="18" height="4" rx="1"/><circle cx="7.5" cy="20" r="1.2"/><circle cx="16.5" cy="20" r="1.2"/></svg></span>
           <h3>Accidentes de tránsito</h3>
           <p>Reclamos, daños, seguros.</p>
           <div class="esp-dash" aria-hidden="true"></div>
         </div>
         <div class="esp-card">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/><path d="M10 19v-5h4v5"/></svg>
+          <span class="icon-circle"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/><path d="M10 19v-5h4v5"/></svg></span>
           <h3>Derecho Inmobiliario</h3>
           <p>Compraventas, alquileres, escrituras, conflictos inmobiliarios.</p>
           <div class="esp-dash" aria-hidden="true"></div>
@@ -812,15 +825,15 @@
         <p class="bio">Creo en un ejercicio profesional basado en la ética, la dedicación y el trato directo con cada persona. Mi compromiso es brindar un asesoramiento claro, realista y adaptado a tu situación, con la seriedad que cada tema jurídico merece.</p>
         <div class="about-pillars">
           <div class="pillar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3 1.2-4.6A4 4 0 0 1 3 14V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
+            <span class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3 1.2-4.6A4 4 0 0 1 3 14V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg></span>
             Escucha activa
           </div>
           <div class="pillar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h7M9 16h7"/></svg>
+            <span class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h7M9 16h7"/></svg></span>
             Análisis estratégico
           </div>
           <div class="pillar">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20c0-3 2.5-5 5-5M20 20c0-3-2.5-5-5-5"/><circle cx="9" cy="8" r="2.6"/><circle cx="17" cy="9" r="2"/></svg>
+            <span class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20c0-3 2.5-5 5-5M20 20c0-3-2.5-5-5-5"/><circle cx="9" cy="8" r="2.6"/><circle cx="17" cy="9" r="2"/></svg></span>
             Acompañamiento en todo el proceso
           </div>
         </div>

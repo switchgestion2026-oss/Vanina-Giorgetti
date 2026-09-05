@@ -359,18 +359,6 @@
     position:relative;
     overflow:hidden;
   }
-  .esp-watermark{
-    position:absolute;
-    right:-6%;
-    bottom:-12%;
-    font-family:var(--font-serif);
-    font-size:min(46vw, 420px);
-    color:var(--petrol);
-    opacity:.045;
-    line-height:1;
-    pointer-events:none;
-    user-select:none;
-  }
   .esp-top{
     position:relative;
     z-index:1;
@@ -627,6 +615,16 @@
     filter:invert(93%) grayscale(1) contrast(1.25) brightness(1.05);
     opacity:.5;
   }
+  .footer-map-pin{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-100%);
+    z-index:2;
+    pointer-events:none;
+    filter:drop-shadow(0 3px 6px rgba(0,0,0,.35));
+  }
+  .footer-map-pin svg{ width:30px; height:30px; color:var(--white-broken); }
   .footer-map-overlay{
     position:absolute; inset:0;
     background:linear-gradient(160deg, rgba(32,59,58,.15), rgba(32,59,58,.35));
@@ -812,7 +810,6 @@
   </div>
 
   <section id="especialidades">
-    <span class="esp-watermark" aria-hidden="true">VG</span>
     <div class="container">
       <div class="esp-top">
         <div class="esp-top-left">
@@ -1054,6 +1051,9 @@
         <div class="footer-map" role="img" aria-label="Mapa de ubicación: San Martín 57, Zárate, Buenos Aires">
           <iframe src="https://www.google.com/maps?q=San+Mart%C3%ADn+57,+Z%C3%A1rate,+Buenos+Aires&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación del estudio"></iframe>
           <div class="footer-map-overlay" aria-hidden="true"></div>
+          <div class="footer-map-pin" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c-4.42 0-8 3.58-8 8 0 5.25 7.05 11.4 7.35 11.66a1 1 0 0 0 1.3 0C12.95 21.4 20 15.25 20 10c0-4.42-3.58-8-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/></svg>
+          </div>
         </div>
       </div>
 

@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanina Giorgetti — Abogada | Zárate</title>
+<meta name="description" content="Vanina Giorgetti, Abogada (UBA). Derecho Civil, Familia, Sucesiones, Laboral, Accidentes de tránsito e Inmobiliario. Atención presencial en Zárate.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ivory:#F3F1E9;
+    --white-broken:#F8F7F2;
+    --petrol:#203B3A;
+    --petrol-soft:#2B4C4A;
+    --green-gray:#667774;
+    --stone:#A9AAA2;
+    --sand:#D8D1C4;
+    --stone-bg:#DDD8CC;
+    --line:#C9C8C0;
+    --text:#22302F;
+
+    --font-serif:'Cormorant Garamond', Georgia, serif;
+    --font-sans:'Manrope', -apple-system, sans-serif;
+
+    --header-h:84px;
+    --radius-btn:24px;
+
+    --sp-1:.4rem;
+    --sp-2:.8rem;
+    --sp-3:1.2rem;
+    --sp-4:1.6rem;
+    --sp-5:2.4rem;
+    --sp-6:3.2rem;
+    --sp-7:4.8rem;
+    --sp-8:6.4rem;
+    --sp-9:9.6rem;
+  }
+
+  *{box-sizing:border-box;}
+  html,body{overflow-x:clip; scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--white-broken);
+    color:var(--text);
+    font-family:var(--font-sans);
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:var(--font-serif);
+    font-weight:500;
+    color:var(--petrol);
+    margin:0;
+    line-height:1.15;
+  }
+  p{margin:0;}
+  a{color:inherit; text-decoration:none;}
+  img{display:block; max-width:100%;}
+  ul{margin:0; padding:0; list-style:none;}
+  button{font-family:inherit; cursor:pointer;}
+  :focus-visible{outline:2px solid var(--petrol); outline-offset:3px;}
+
+  .container{
+    max-width:1240px;
+    margin:0 auto;
+    padding:0 var(--sp-4);
+  }
+  .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:var(--sp-3);
+    font-size:.72rem;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--green-gray);
+    font-weight:600;
+    margin-bottom:var(--sp-3);
+  }
+  .eyebrow::before{
+    content:"";
+    display:block;
+    width:32px;
+    height:1px;
+    background:var(--green-gray);
+  }
+  .divider-line{
+    width:32px;
+    height:1px;
+    background:var(--stone);
+    margin:var(--sp-3) 0;
+  }
+
+  /* ---------- BOTONES ---------- */
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:var(--sp-2);
+    padding:.9rem 1.7rem;
+    border-radius:var(--radius-btn);
+    font-size:.95rem;
+    font-weight:600;
+    white-space:nowrap;
+    transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+    border:1px solid transparent;
+  }
+  .btn-primary{
+    background:var(--petrol);
+    color:var(--white-broken);
+    box-shadow:0 8px 24px rgba(32,59,58,.18);
+  }
+  .btn-primary:hover{ transform:translateY(-1px); box-shadow:0 10px 28px rgba(32,59,58,.25); }
+  .btn-outline{
+    background:transparent;
+    border-color:currentColor;
+    color:var(--petrol);
+  }
+  .btn-outline:hover{ background:rgba(32,59,58,.06); }
+  .btn-outline-light{
+    background:transparent;
+    border-color:rgba(248,247,242,.55);
+    color:var(--white-broken);
+  }
+  .btn-outline-light:hover{ background:rgba(248,247,242,.08); }
+  .btn svg{width:18px; height:18px; flex-shrink:0;}
+
+  /* ---------- HEADER ---------- */
+  header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    height:var(--header-h);
+    display:flex;
+    align-items:center;
+    background:rgba(248,247,242,.72);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(201,200,192,.6);
+  }
+  header.on-hero{
+    background:transparent;
+    border-bottom-color:transparent;
+  }
+  .nav-wrap{
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:var(--sp-4);
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:var(--sp-3);
+    min-width:0;
+  }
+  .brand img{ height:40px; width:auto; flex-shrink:0; }
+  .brand-text{ line-height:1.25; min-width:0; }
+  .brand-name{
+    font-family:var(--font-sans);
+    font-size:.78rem;
+    font-weight:700;
+    letter-spacing:.04em;
+    color:var(--petrol);
+    text-transform:uppercase;
+    white-space:nowrap;
+  }
+  header.on-hero .brand-name{ color:var(--white-broken); }
+  .brand-sub{
+    font-size:.62rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--green-gray);
+    white-space:nowrap;
+  }
+  header.on-hero .brand-sub{ color:rgba(248,247,242,.75); }
+
+  nav.main-nav{ display:none; }
+  .main-nav ul{ display:flex; align-items:center; gap:var(--sp-5); }
+  .main-nav a{
+    font-size:.9rem;
+    font-weight:500;
+    color:var(--text);
+    padding-bottom:4px;
+    border-bottom:1px solid transparent;
+    white-space:nowrap;
+  }
+  header.on-hero .main-nav a{ color:var(--white-broken); }
+  .main-nav a[aria-current="page"], .main-nav a:hover{ border-bottom-color:currentColor; }
+
+  .header-actions{ display:flex; align-items:center; gap:var(--sp-3); }
+  .header-actions .btn-primary{ display:none; }
+
+  .menu-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:44px; height:44px;
+    background:none;
+    border:1px solid var(--line);
+    border-radius:50%;
+    color:var(--petrol);
+  }
+  header.on-hero .menu-toggle{ border-color:rgba(248,247,242,.5); color:var(--white-broken); }
+  .menu-toggle svg{ width:20px; height:20px; }
+
+  .mobile-menu{
+    position:fixed;
+    inset:0;
+    z-index:200;
+    background:var(--white-broken);
+    display:flex;
+    flex-direction:column;
+    padding:var(--sp-5) var(--sp-4);
+    transform:translateX(100%);
+    transition:transform .35s ease;
+    height:100dvh;
+    height:100vh;
+  }
+  .mobile-menu.open{ transform:translateX(0); }
+  .mobile-menu-top{ display:flex; justify-content:space-between; align-items:center; }
+  .mobile-menu-close{
+    width:44px; height:44px;
+    border:1px solid var(--line);
+    border-radius:50%;
+    background:none;
+    display:flex; align-items:center; justify-content:center;
+    color:var(--petrol);
+  }
+  .mobile-menu-close svg{ width:20px; height:20px; }
+  .mobile-menu nav{ margin-top:var(--sp-7); }
+  .mobile-menu nav ul{ display:flex; flex-direction:column; gap:var(--sp-5); }
+  .mobile-menu nav a{ font-family:var(--font-serif); font-size:1.9rem; color:var(--petrol); }
+  .mobile-menu .btn{ margin-top:var(--sp-6); align-self:flex-start; }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    margin-top:calc(-1 * var(--header-h));
+    padding-top:var(--header-h);
+    min-height:640px;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    background:var(--petrol);
+  }
+  .hero-bg{
+    position:absolute; inset:0;
+    background-image:url('hero.webp');
+    background-size:cover;
+    background-position:center;
+  }
+  .hero-overlay{
+    position:absolute; inset:0;
+    background:linear-gradient(100deg, rgba(20,32,31,.86) 0%, rgba(20,32,31,.68) 32%, rgba(20,32,31,.28) 62%, rgba(20,32,31,.12) 100%);
+  }
+  .hero-mark{
+    position:absolute;
+    right:-40px;
+    top:50%;
+    transform:translateY(-50%);
+    font-family:var(--font-serif);
+    font-size:min(30vw, 340px);
+    line-height:1;
+    color:var(--white-broken);
+    opacity:.08;
+    user-select:none;
+    pointer-events:none;
+  }
+  .hero-inner{
+    position:relative;
+    z-index:2;
+    width:100%;
+    padding:var(--sp-8) 0 var(--sp-7);
+    display:flex;
+    flex-direction:column;
+    gap:var(--sp-7);
+  }
+  .hero-content{ max-width:620px; }
+  .hero .eyebrow{ color:rgba(248,247,242,.8); }
+  .hero .eyebrow::before{ background:rgba(248,247,242,.6); }
+  .hero h1{
+    color:var(--white-broken);
+    font-size:clamp(2.1rem, 5vw, 3.4rem);
+    text-shadow:0 2px 18px rgba(0,0,0,.25);
+    margin-bottom:var(--sp-4);
+  }
+  .hero p.lead{
+    color:rgba(248,247,242,.88);
+    font-size:1.1rem;
+    max-width:480px;
+    margin-bottom:var(--sp-5);
+  }
+  .hero-side{
+    display:none;
+  }
+  .hero-side-words{
+    writing-mode:vertical-rl;
+    letter-spacing:.22em;
+    font-size:.7rem;
+    color:rgba(248,247,242,.7);
+    text-transform:uppercase;
+    display:flex;
+    gap:var(--sp-3);
+    align-items:center;
+  }
+  .hero-side-loc{
+    font-size:.72rem;
+    letter-spacing:.14em;
+    color:rgba(248,247,242,.85);
+    text-transform:uppercase;
+  }
+
+  /* ---------- BARRA INFO ---------- */
+  .info-bar{
+    background:var(--stone-bg);
+    border-bottom:1px solid var(--line);
+  }
+  .info-bar .container{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:var(--sp-4);
+    padding-top:var(--sp-4);
+    padding-bottom:var(--sp-4);
+  }
+  .info-item{
+    display:flex;
+    align-items:center;
+    gap:var(--sp-3);
+    font-size:.82rem;
+    letter-spacing:.03em;
+    color:var(--petrol);
+    font-weight:600;
+  }
+  .info-item svg{ width:20px; height:20px; color:var(--petrol); flex-shrink:0; }
+
+  /* ---------- SECCIONES GENERALES ---------- */
+  section{ padding:var(--sp-8) 0; }
+  .section-head{
+    display:flex;
+    flex-direction:column;
+    gap:var(--sp-3);
+    margin-bottom:var(--sp-6);
+  }
+  .section-head h2{ font-size:clamp(1.8rem, 3.4vw, 2.6rem); }
+  .section-head p{ color:var(--green-gray); max-width:480px; }
+
+  /* ---------- ESPECIALIDADES ---------- */
+  .esp-top{
+    display:flex;
+    flex-direction:column;
+    gap:var(--sp-5);
+    margin-bottom:var(--sp-6);
+  }
+  .esp-link{
+    font-size:.9rem;
+    font-weight:600;
+    color:var(--petrol);
+    border-bottom:1px solid var(--petrol);
+    padding-bottom:2px;
+    display:inline-flex;
+    gap:var(--sp-2);
+    align-items:center;
+    width:fit-content;
+  }
+  .esp-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:0;
+  }
+  .esp-card{
+    padding:0 var(--sp-4) var(--sp-5) 0;
+    display:flex;
+    flex-direction:column;
+    gap:var(--sp-2);
+  }
+  .esp-card .icon{ width:26px; height:26px; color:var(--petrol); margin-bottom:var(--sp-1); }
+  .esp-card h3{ font-size:1.05rem; line-height:1.25; }
+  .esp-card p{ font-size:.82rem; color:var(--green-gray); }
+  .esp-dash{ width:20px; height:1px; background:var(--stone); margin-top:var(--sp-2); }
+
+  /* ---------- SOBRE MI ---------- */
+  .about{
+    position:relative;
+    overflow:hidden;
+    background:var(--ivory);
+  }
+  .about-watermark{
+    position:absolute;
+    font-family:var(--font-serif);
+    font-size:min(50vw, 480px);
+    color:var(--petrol);
+    opacity:.045;
+    right:-8%;
+    top:-14%;
+    line-height:1;
+    pointer-events:none;
+    user-select:none;
+  }
+  .about-grid{
+    position:relative;
+    z-index:1;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:var(--sp-6);
+    align-items:center;
+  }
+  .about-photo{
+    position:relative;
+    aspect-ratio:4/5;
+    max-width:420px;
+  }
+  .about-photo img{
+    width:100%; height:100%;
+    object-fit:cover;
+  }
+  .about-photo::after{
+    content:"";
+    position:absolute;
+    inset:14px;
+    border:1px solid var(--petrol);
+    pointer-events:none;
+  }
+  .about-content .brand-sub{ display:block; margin-bottom:var(--sp-2); color:var(--green-gray); font-size:.75rem; }
+  .about-content h2{ font-size:clamp(1.9rem, 3.6vw, 2.6rem); margin-bottom:var(--sp-1); }
+  .about-role{
+    font-size:.85rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--green-gray);
+    margin-bottom:var(--sp-4);
+    display:block;
+  }
+  .about-content p.bio{ color:var(--text); max-width:480px; margin-bottom:var(--sp-5); }
+  .about-pillars{
+    display:flex;
+    flex-direction:column;
+    gap:var(--sp-4);
+    border-top:1px solid var(--line);
+    padding-top:var(--sp-4);
+  }
+  .pillar{ display:flex; align-items:center; gap:var(--sp-3); font-size:.92rem; font-weight:600; color:var(--petrol); }
+  .pillar svg{ width:22px; height:22px; color:var(--green-gray); flex-shrink:0; }
+
+  /* ---------- PROBLEMAS ---------- */
+  .problems{ background:var(--white-broken); }
+  .problems-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:var(--sp-4);
+  }
+  .problem-card{
+    background:var(--ivory);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:var(--sp-5);
+    display:flex;
+    flex-direction:column;
+    gap:var(--sp-3);
+  }
+  .problem-card h3{ font-size:1.15rem; }
+  .problem-card p{ font-size:.9rem; color:var(--green-gray); }
+  .problem-card a{
+    font-size:.85rem;
+    font-weight:700;
+    color:var(--petrol);
+    border-bottom:1px solid var(--petrol);
+    width:fit-content;
+  }
+
+  /* ---------- EDITORIAL ---------- */
+  .editorial{
+    background:var(--stone-bg);
+    padding:0;
+  }
+  .editorial-grid{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  .editorial-photo{ height:280px; }
+  .editorial-photo img{ width:100%; height:100%; object-fit:cover; filter:saturate(.85) contrast(1.02); }
+  .editorial-text{
+    padding:var(--sp-7) var(--sp-4);
+    display:flex;
+    align-items:center;
+    position:relative;
+  }
+  .editorial-quote{
+    font-family:var(--font-serif);
+    font-style:italic;
+    font-size:clamp(1.4rem, 3vw, 2rem);
+    color:var(--petrol);
+    max-width:460px;
+    position:relative;
+    z-index:1;
+  }
+  .editorial-mark{
+    position:absolute;
+    font-family:var(--font-serif);
+    font-size:8rem;
+    color:var(--green-gray);
+    opacity:.25;
+    top:-.5rem;
+    left:var(--sp-4);
+    line-height:1;
+  }
+
+  /* ---------- PROCESO ---------- */
+  .process{ background:var(--white-broken); }
+  .process-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:var(--sp-6);
+    position:relative;
+  }
+  .process-step{ display:flex; flex-direction:column; gap:var(--sp-2); }
+  .process-num{
+    font-family:var(--font-serif);
+    font-size:2.4rem;
+    color:var(--green-gray);
+    opacity:.55;
+  }
+  .process-step h3{ font-size:1.15rem; }
+  .process-step p{ font-size:.88rem; color:var(--green-gray); }
+
+  /* ---------- FAQ ---------- */
+  .faq{ background:var(--ivory); }
+  .faq-item{ border-bottom:1px solid var(--line); }
+  .faq-q{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:var(--sp-3);
+    background:none;
+    border:none;
+    padding:var(--sp-4) 0;
+    text-align:left;
+    font-family:var(--font-serif);
+    font-size:1.15rem;
+    color:var(--petrol);
+  }
+  .faq-q svg{ width:18px; height:18px; flex-shrink:0; transition:transform .25s ease; color:var(--green-gray); }
+  .faq-item[data-open="true"] .faq-q svg{ transform:rotate(45deg); }
+  .faq-a{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .3s ease;
+  }
+  .faq-a p{ padding-bottom:var(--sp-4); color:var(--green-gray); font-size:.92rem; max-width:640px; }
+
+  /* ---------- FOOTER / CONTACTO ---------- */
+  .footer-cta{
+    background:var(--petrol);
+    color:var(--white-broken);
+    padding:var(--sp-8) 0 var(--sp-6);
+  }
+  .footer-cta .container{
+    display:flex;
+    flex-direction:column;
+    gap:var(--sp-6);
+  }
+  .footer-top{ display:flex; flex-direction:column; gap:var(--sp-4); }
+  .footer-top h2{ color:var(--white-broken); font-size:clamp(2rem, 4vw, 3rem); }
+  .footer-top .eyebrow{ color:rgba(248,247,242,.65); }
+  .footer-top .eyebrow::before{ background:rgba(248,247,242,.4); }
+  .footer-contact-list{ display:flex; flex-direction:column; gap:var(--sp-3); }
+  .footer-contact-list li{ display:flex; align-items:center; gap:var(--sp-3); font-size:.92rem; }
+  .footer-contact-list svg{ width:18px; height:18px; flex-shrink:0; color:rgba(248,247,242,.75); }
+  .footer-divider{ height:1px; background:rgba(248,247,242,.18); }
+  .footer-bottom{
+    display:flex;
+    flex-direction:column;
+    gap:var(--sp-4);
+    font-size:.8rem;
+    color:rgba(248,247,242,.7);
+  }
+  .footer-bottom-links{ display:flex; flex-wrap:wrap; gap:var(--sp-4); }
+  .footer-bottom-links a{ opacity:.85; }
+  .footer-bottom-links a:hover{ opacity:1; text-decoration:underline; }
+  .footer-credit{
+    font-size:.72rem;
+    color:rgba(248,247,242,.55);
+  }
+  .footer-credit a{ text-decoration:underline; }
+
+  /* ---------- WHATSAPP FLOTANTE ---------- */
+  .wa-float{
+    position:fixed;
+    right:var(--sp-4);
+    bottom:var(--sp-4);
+    z-index:150;
+    width:56px; height:56px;
+    border-radius:50%;
+    background:var(--petrol);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 10px 30px rgba(32,59,58,.35);
+  }
+  .wa-float svg{ width:26px; height:26px; color:var(--white-broken); }
+
+  /* ---------- TABLET ---------- */
+  @media (min-width:768px){
+    .info-bar .container{ grid-template-columns:repeat(3,1fr); }
+    .esp-grid{ grid-template-columns:repeat(2,1fr); }
+    .esp-card{ border-right:1px solid var(--line); padding-right:var(--sp-5); }
+    .esp-card:nth-child(2n){ border-right:none; }
+    .about-grid{ grid-template-columns:.85fr 1fr; }
+    .problems-grid{ grid-template-columns:repeat(2,1fr); }
+    .process-grid{ grid-template-columns:repeat(2,1fr); }
+    .editorial-grid{ grid-template-columns:1fr 1fr; }
+    .editorial-photo{ height:auto; }
+    .footer-bottom{ flex-direction:row; justify-content:space-between; align-items:center; }
+  }
+
+  /* ---------- DESKTOP ---------- */
+  @media (min-width:1024px){
+    nav.main-nav{ display:block; }
+    .header-actions .btn-primary{ display:inline-flex; }
+    .menu-toggle{ display:none; }
+
+    .hero-inner{ padding:var(--sp-9) 0 var(--sp-8); }
+    .hero-content{ display:flex; flex-direction:column; }
+    .hero-row{ display:flex; justify-content:space-between; align-items:flex-end; gap:var(--sp-6); }
+    .hero-side{ display:flex; flex-direction:column; align-items:flex-end; gap:var(--sp-5); }
+
+    .esp-grid{ grid-template-columns:repeat(3,1fr); }
+    .esp-card{ border-right:1px solid var(--line); }
+    .esp-card:nth-child(3n){ border-right:none; }
+    .esp-card:nth-child(2n){ border-right:1px solid var(--line); }
+
+    .process-grid{ grid-template-columns:repeat(4,1fr); }
+    .process-grid::before{
+      content:"";
+      position:absolute;
+      top:22px;
+      left:5%;
+      right:5%;
+      height:1px;
+      background:var(--line);
+      z-index:0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header id="site-header" class="on-hero">
+  <div class="container nav-wrap">
+    <a href="#inicio" class="brand">
+      <img src="logo.webp" alt="Vanina Giorgetti — Abogada">
+      <span class="brand-text">
+        <span class="brand-name" style="display:block;">Vanina Giorgetti</span>
+        <span class="brand-sub">Abogada · UBA</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio" aria-current="page">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#proceso">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary" href="https://wa.me/5493487555055" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.383 3 4 8.383 4 15c0 2.385.694 4.611 1.885 6.487L4 29l7.716-1.853A11.94 11.94 0 0 0 16.001 27C22.617 27 28 21.617 28 15S22.617 3 16.001 3zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10c-1.846 0-3.564-.5-5.042-1.37l-.362-.213-4.573 1.098 1.122-4.458-.238-.375A9.94 9.94 0 0 1 6.001 15c0-5.514 4.486-10 10-10zm-3.278 4.966c-.198 0-.52.074-.792.372-.272.297-1.04 1.017-1.04 2.479 0 1.462 1.065 2.874 1.213 3.073.148.198 2.057 3.303 5.06 4.5 2.503.995 3.012.797 3.556.747.545-.05 1.759-.719 2.007-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347-.298-.149-1.759-.868-2.032-.967-.272-.099-.47-.149-.669.149-.198.297-.767.966-.94 1.164-.173.198-.347.223-.645.075-.298-.149-1.257-.463-2.396-1.477-.886-.79-1.484-1.766-1.658-2.064-.173-.297-.019-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.496.099-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01z"/></svg>
+        Consultá por WhatsApp
+      </a>
+      <button class="menu-toggle" id="menu-open" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <div class="mobile-menu-top">
+    <a href="#inicio" class="brand">
+      <img src="logo.webp" alt="Vanina Giorgetti — Abogada" style="height:34px;">
+    </a>
+    <button class="mobile-menu-close" id="menu-close" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Navegación mobile">
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#especialidades">Especialidades</a></li>
+      <li><a href="#proceso">Servicios</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-primary" href="https://wa.me/5493487555055" target="_blank" rel="noopener">Consultá por WhatsApp</a>
+</div>
+
+<main>
+
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <span class="hero-mark" aria-hidden="true">VG</span>
+    <div class="container hero-inner">
+      <div class="hero-row">
+        <div class="hero-content">
+          <p class="eyebrow">Tu tranquilidad también es un derecho</p>
+          <h1>Soluciones legales con una mirada real de tu realidad.</h1>
+          <p class="lead">Te acompaño en cada etapa con compromiso, claridad y un trato directo, para que puedas tomar decisiones informadas y seguras.</p>
+          <a class="btn btn-primary" href="https://wa.me/5493487555055" target="_blank" rel="noopener">
+            Agendá tu consulta
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="hero-side">
+          <span class="hero-side-words">ESTRATEGIA · EXPERIENCIA · ACOMPAÑAMIENTO · RESULTADOS</span>
+          <span class="hero-side-loc">Zárate · Buenos Aires</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="info-bar">
+    <div class="container">
+      <div class="info-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+        Atención presencial en Zárate
+      </div>
+      <div class="info-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="1.5"/><path d="M3 9h18"/></svg>
+        Asesoramiento en todo el país
+      </div>
+      <div class="info-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="5" width="16" height="15" rx="1.5"/><path d="M4 10h16M8 3v4M16 3v4"/></svg>
+        Turnos flexibles
+      </div>
+    </div>
+  </div>
+
+  <section id="especialidades">
+    <div class="container">
+      <div class="esp-top">
+        <div>
+          <p class="eyebrow">Especialidades</p>
+          <h2>En qué puedo ayudarte</h2>
+        </div>
+        <div>
+          <p style="color:var(--green-gray); max-width:440px; margin-bottom:var(--sp-3);">Cada consulta es una historia única. Te acompaño con un enfoque legal preciso, adaptado a tu situación.</p>
+          <a class="esp-link" href="#proceso">Conocé cómo trabajo
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="esp-grid">
+        <div class="esp-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h7M9 16h7"/></svg>
+          <h3>Derecho Civil</h3>
+          <p>Contratos, daños, obligaciones.</p>
+          <div class="esp-dash" aria-hidden="true"></div>
+        </div>
+        <div class="esp-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="7" r="2.6"/><circle cx="5" cy="9" r="2"/><circle cx="19" cy="9" r="2"/><path d="M4 20c0-3 2.5-5 5-5M20 20c0-3-2.5-5-5-5"/><path d="M7 20c0-3.5 2.2-6 5-6s5 2.5 5 6"/></svg>
+          <h3>Derecho de Familia</h3>
+          <p>Divorcios, alimentos, cuidados, régimen comunicacional.</p>
+          <div class="esp-dash" aria-hidden="true"></div>
+        </div>
+        <div class="esp-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12l2 2 4-4"/></svg>
+          <h3>Sucesiones</h3>
+          <p>Planificación y tramitación sucesoria.</p>
+          <div class="esp-dash" aria-hidden="true"></div>
+        </div>
+        <div class="esp-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l8 4v2H4V7z"/><path d="M6 9v8M12 9v8M18 9v8M4 20h16"/></svg>
+          <h3>Derecho Laboral</h3>
+          <p>Despidos, accidentes de trabajo (ART), derechos laborales.</p>
+          <div class="esp-dash" aria-hidden="true"></div>
+        </div>
+        <div class="esp-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 16l2-6a2 2 0 0 1 2-1.4h8a2 2 0 0 1 2 1.4l2 6"/><rect x="3" y="16" width="18" height="4" rx="1"/><circle cx="7.5" cy="20" r="1.2"/><circle cx="16.5" cy="20" r="1.2"/></svg>
+          <h3>Accidentes de tránsito</h3>
+          <p>Reclamos, daños, seguros.</p>
+          <div class="esp-dash" aria-hidden="true"></div>
+        </div>
+        <div class="esp-card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 11l8-6 8 6"/><path d="M6 10v9h12v-9"/><path d="M10 19v-5h4v5"/></svg>
+          <h3>Derecho Inmobiliario</h3>
+          <p>Compraventas, alquileres, escrituras, conflictos inmobiliarios.</p>
+          <div class="esp-dash" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="sobre-mi">
+    <span class="about-watermark" aria-hidden="true">VG</span>
+    <div class="container about-grid">
+      <div class="about-photo">
+        <img src="perfil.webp" alt="Vanina Giorgetti en su estudio jurídico">
+      </div>
+      <div class="about-content">
+        <span class="brand-sub">Sobre mí</span>
+        <h2>Vanina Giorgetti</h2>
+        <span class="about-role">Abogada (UBA)</span>
+        <p class="bio">Creo en un ejercicio profesional basado en la ética, la dedicación y el trato directo con cada persona. Mi compromiso es brindar un asesoramiento claro, realista y adaptado a tu situación, con la seriedad que cada tema jurídico merece.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3 1.2-4.6A4 4 0 0 1 3 14V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
+            Escucha activa
+          </div>
+          <div class="pillar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h7M9 16h7"/></svg>
+            Análisis estratégico
+          </div>
+          <div class="pillar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20c0-3 2.5-5 5-5M20 20c0-3-2.5-5-5-5"/><circle cx="9" cy="8" r="2.6"/><circle cx="17" cy="9" r="2"/></svg>
+            Acompañamiento en todo el proceso
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="problems">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">¿Te está pasando esto?</p>
+        <h2>Situaciones que no deberían esperar</h2>
+        <p>Actuar a tiempo evita que estos conflictos se agraven. Si te identificás con alguna, hablemos.</p>
+      </div>
+      <div class="problems-grid">
+        <div class="problem-card">
+          <h3>¿Te separaste y no sabés cómo seguir con los alimentos o la tenencia?</h3>
+          <p>Te ayudo a ordenar la situación con un acuerdo claro, evitando que el conflicto se extienda en el tiempo.</p>
+          <a href="https://wa.me/5493487555055" target="_blank" rel="noopener">Consultar mi caso →</a>
+        </div>
+        <div class="problem-card">
+          <h3>¿Te despidieron y no sabés qué te corresponde?</h3>
+          <p>Analizo tu liquidación antes de que firmes nada, para que no pierdas lo que es tuyo por ley.</p>
+          <a href="https://wa.me/5493487555055" target="_blank" rel="noopener">Consultar mi caso →</a>
+        </div>
+        <div class="problem-card">
+          <h3>¿Tuviste un accidente de tránsito o laboral?</h3>
+          <p>Te acompaño en el reclamo frente a la aseguradora o la ART, sin que actúes solo/a frente a la otra parte.</p>
+          <a href="https://wa.me/5493487555055" target="_blank" rel="noopener">Consultar mi caso →</a>
+        </div>
+        <div class="problem-card">
+          <h3>¿Hay una sucesión pendiente en la familia?</h3>
+          <p>Ordeno la documentación y te guío en cada paso, para que la herencia no se convierta en un conflicto mayor.</p>
+          <a href="https://wa.me/5493487555055" target="_blank" rel="noopener">Consultar mi caso →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="editorial">
+    <div class="editorial-grid">
+      <div class="editorial-photo">
+        <img src="cercania.webp" alt="Detalle arquitectónico vinculado a la justicia">
+      </div>
+      <div class="editorial-text">
+        <span class="editorial-mark" aria-hidden="true">&#8220;</span>
+        <p class="editorial-quote">Una consulta a tiempo puede cambiar las decisiones que tomás después.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="proceso">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Cómo trabajo</p>
+        <h2>Un proceso claro, de principio a fin</h2>
+      </div>
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="process-num">01</span>
+          <h3>Consulta inicial</h3>
+          <p>Me contás tu situación y evaluamos juntas el panorama, sin tecnicismos.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-num">02</span>
+          <h3>Análisis del caso</h3>
+          <p>Reviso la documentación y defino la estrategia más conveniente para vos.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-num">03</span>
+          <h3>Acompañamiento</h3>
+          <p>Te mantengo informado/a en cada etapa, con un trato directo y personal.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-num">04</span>
+          <h3>Resolución</h3>
+          <p>Trabajamos para llegar a la mejor solución posible para tu caso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Preguntas frecuentes</p>
+        <h2>Antes de escribirme</h2>
+      </div>
+
+      <div class="faq-item" data-open="false">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-1">
+          ¿Cómo es la modalidad de atención?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-a" id="faq-a-1">
+          <p>Trabajo con atención presencial en mi estudio de Zárate, con un trato directo y personalizado en cada encuentro. Para quienes viven en otras localidades, coordinamos una modalidad a distancia adaptada a tu caso.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-open="false">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-2">
+          ¿Qué necesito para una primera consulta?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-a" id="faq-a-2">
+          <p>Alcanza con que me cuentes tu situación con tus propias palabras, sin necesidad de conocimientos legales previos. Si contás con documentación vinculada al caso (contratos, telegramas, actas, notificaciones), es de ayuda tenerla a mano, pero no es un requisito para empezar.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-open="false">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-3">
+          ¿Atendés casos fuera de Zárate?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-a" id="faq-a-3">
+          <p>Sí. Si bien la atención presencial es en Zárate, brindo asesoramiento en distintos puntos del país según el tipo de gestión, definiendo en cada caso la modalidad más conveniente para avanzar sin que la distancia sea un impedimento.</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-open="false">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-a-4">
+          ¿Cómo coordino un turno?
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 5v14M5 12h14"/></svg>
+        </button>
+        <div class="faq-a" id="faq-a-4">
+          <p>La forma más ágil de coordinar un turno es por WhatsApp: me contás brevemente tu consulta y definimos juntas el día y horario según la disponibilidad, con la flexibilidad necesaria para adaptarnos a tu situación.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-cta" id="contacto">
+    <div class="container">
+      <div class="footer-top">
+        <p class="eyebrow">Contacto</p>
+        <h2>Hablemos.</h2>
+        <p style="color:rgba(248,247,242,.8); max-width:420px;">Estoy para ayudarte. Escribime y te respondo a la brevedad.</p>
+        <a class="btn btn-outline-light" href="https://wa.me/5493487555055" target="_blank" rel="noopener" style="margin-top:var(--sp-2); width:fit-content;">
+          <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.383 3 4 8.383 4 15c0 2.385.694 4.611 1.885 6.487L4 29l7.716-1.853A11.94 11.94 0 0 0 16.001 27C22.617 27 28 21.617 28 15S22.617 3 16.001 3zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10c-1.846 0-3.564-.5-5.042-1.37l-.362-.213-4.573 1.098 1.122-4.458-.238-.375A9.94 9.94 0 0 1 6.001 15c0-5.514 4.486-10 10-10zm-3.278 4.966c-.198 0-.52.074-.792.372-.272.297-1.04 1.017-1.04 2.479 0 1.462 1.065 2.874 1.213 3.073.148.198 2.057 3.303 5.06 4.5 2.503.995 3.012.797 3.556.747.545-.05 1.759-.719 2.007-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347-.298-.149-1.759-.868-2.032-.967-.272-.099-.47-.149-.669.149-.198.297-.767.966-.94 1.164-.173.198-.347.223-.645.075-.298-.149-1.257-.463-2.396-1.477-.886-.79-1.484-1.766-1.658-2.064-.173-.297-.019-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.496.099-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01z"/></svg>
+          Consultá por WhatsApp
+        </a>
+      </div>
+
+      <ul class="footer-contact-list">
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+          Giorgettivanina@yahoo.com.ar
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11a7 7 0 1 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+          San Martín 57, Zárate, Buenos Aires
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+          <a href="https://www.instagram.com/vanina.giorgetti.abogada" target="_blank" rel="noopener">vanina.giorgetti.abogada</a>
+        </li>
+      </ul>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-links">
+          <a href="legal.html#aviso">Aviso legal</a>
+          <a href="legal.html#privacidad">Privacidad</a>
+          <a href="legal.html#terminos">Términos</a>
+        </div>
+        <p>&copy; <span id="year"></span> Vanina Giorgetti — Abogada. Todos los derechos reservados. · <span class="footer-credit">Diseño &amp; creación web · <a href="https://www.instagram.com/switchgestion/" target="_blank" rel="noopener">@Switchgestion</a></span></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<a class="wa-float" href="https://wa.me/5493487555055" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.001 3C9.383 3 4 8.383 4 15c0 2.385.694 4.611 1.885 6.487L4 29l7.716-1.853A11.94 11.94 0 0 0 16.001 27C22.617 27 28 21.617 28 15S22.617 3 16.001 3zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10c-1.846 0-3.564-.5-5.042-1.37l-.362-.213-4.573 1.098 1.122-4.458-.238-.375A9.94 9.94 0 0 1 6.001 15c0-5.514 4.486-10 10-10zm-3.278 4.966c-.198 0-.52.074-.792.372-.272.297-1.04 1.017-1.04 2.479 0 1.462 1.065 2.874 1.213 3.073.148.198 2.057 3.303 5.06 4.5 2.503.995 3.012.797 3.556.747.545-.05 1.759-.719 2.007-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347-.298-.149-1.759-.868-2.032-.967-.272-.099-.47-.149-.669.149-.198.297-.767.966-.94 1.164-.173.198-.347.223-.645.075-.298-.149-1.257-.463-2.396-1.477-.886-.79-1.484-1.766-1.658-2.064-.173-.297-.019-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.496.099-.198.05-.372-.025-.52-.074-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.57-.01z"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Header transparente solo mientras se ve el hero
+  var header = document.getElementById('site-header');
+  var hero = document.querySelector('.hero');
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        header.classList.add('on-hero');
+      } else {
+        header.classList.remove('on-hero');
+      }
+    });
+  }, { threshold: 0.55 });
+  io.observe(hero);
+
+  // Menú mobile
+  var menuOpen = document.getElementById('menu-open');
+  var menuClose = document.getElementById('menu-close');
+  var mobileMenu = document.getElementById('mobile-menu');
+
+  function openMenu(){
+    mobileMenu.classList.add('open');
+    menuOpen.setAttribute('aria-expanded','true');
+  }
+  function closeMenu(){
+    mobileMenu.classList.remove('open');
+    menuOpen.setAttribute('aria-expanded','false');
+  }
+  menuOpen.addEventListener('click', openMenu);
+  menuClose.addEventListener('click', closeMenu);
+  mobileMenu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', closeMenu);
+  });
+
+  // Acordeón FAQ
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var btn = item.querySelector('.faq-q');
+    var panel = item.querySelector('.faq-a');
+    btn.addEventListener('click', function(){
+      var isOpen = item.getAttribute('data-open') === 'true';
+      document.querySelectorAll('.faq-item').forEach(function(other){
+        other.setAttribute('data-open','false');
+        other.querySelector('.faq-q').setAttribute('aria-expanded','false');
+        other.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if(!isOpen){
+        item.setAttribute('data-open','true');
+        btn.setAttribute('aria-expanded','true');
+        panel.style.maxHeight = panel.scrollHeight + 'px';
+      }
+    });
+  });
+</script>
+</body>
+</html>
